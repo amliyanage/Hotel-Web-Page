@@ -30,7 +30,7 @@ header ul{
     font-family: "Jaldi", sans-serif;
 }
 
-header nav > :last-child i{
+header nav > :nth-child(3) i{
     font-size: 24px;
     color: #FF7676;
 }
@@ -63,3 +63,32 @@ header a{
     font-size: 20px;
     letter-spacing: 0.8px;
 }
+
+@media screen and (max-width: 1024px) {
+    header nav .logo img{
+        width: 77px;
+    }
+
+    header ul{
+        gap: 29px;
+    }
+
+    header .gap-5 {
+        gap: 1rem !important;
+    }
+
+    header nav > :last-child i {
+        font-size: 19px;
+    }
+
+    header .account img {
+        width: 35px;
+        height: 35px;
+    }
+
+    header a {
+        font-size: 18px;
+    }
+}
+
+
