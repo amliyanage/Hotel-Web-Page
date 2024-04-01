@@ -2,7 +2,11 @@
 
 header{
     background-color: #333;
-    width: 100%;
+    margin: 58px 66px;
+    width: 93.5%;
+    border-radius: 29px;
+    background: #ffffff59;
+    backdrop-filter: blur(2px);
 }
 
 *{
@@ -63,6 +67,17 @@ header a{
     font-size: 20px;
     letter-spacing: 0.8px;
 }
+.homePage{
+    width: 100%;
+}
+
+.homePage img{
+    width: 96.3%;
+    height: 100%;
+    margin: 38px;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 1024px) {
     header nav .logo img{
@@ -110,3 +125,5 @@ header a{
         width: 100px;
     }
 }
+
+
