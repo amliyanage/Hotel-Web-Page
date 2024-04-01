@@ -91,4 +91,12 @@ header a{
     }
 }
 
+@media screen and (max-width: 768px) {
+    header nav > .d-flex{
+        display: none !important;
+    }
 
+    header nav > .d-none{
+        display: block !important;
+    }
+}
