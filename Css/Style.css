@@ -99,4 +99,14 @@ header a{
     header nav > .d-none{
         display: block !important;
     }
+
+    header nav .bar{
+        padding: 10px 20px;
+        border: 2px solid #ffff;
+        border-radius: 10px;
+    }
+
+    header nav .logo img{
+        width: 100px;
+    }
 }
