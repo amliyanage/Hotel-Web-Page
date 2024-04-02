@@ -1,129 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 header{
-    background-color: #333;
-    margin: 58px 66px;
-    width: 93.5%;
-    border-radius: 29px;
-    background: #ffffff59;
-    backdrop-filter: blur(2px);
+    padding: 32px;
+    background-color: black;
 }
 
-*{
-    text-decoration: none;
-    list-style: none;
-}
-
-header nav{
-    color: #FFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-header .logo{
-    width: 107px;
-    height: 35px;
-}
-
-header ul{
-    gap: 51px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-family: "Jaldi", sans-serif;
-}
-
-header nav > :nth-child(3) i{
+header i{
     font-size: 24px;
     color: #FF7676;
 }
 
-header .account > :first-child{
-    display: flex;
-    gap: 10px;
-}
-
-
-header .account h3{
-    font-size: 14px;
-    font-weight: 600;
-}
-
-header .account > :last-child{
-    display: flex;
-    gap: 10px;
-}
-
-
-header .account img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
-
 header a{
-    font-family: "Jaldi", sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.8px;
-}
-.homePage{
-    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    font-family: "Poppins", sans-serif;
 }
 
-.homePage img{
-    width: 96.3%;
-    height: 100%;
-    margin: 38px;
+header nav > :nth-child(2){
+    gap: 63px;
 }
 
-/* Media Queries */
-
-@media screen and (max-width: 1024px) {
-    header nav .logo img{
-        width: 77px;
-    }
-
-    header ul{
-        gap: 29px;
-    }
-
-    header .gap-5 {
-        gap: 1rem !important;
-    }
-
-    header nav > :last-child i {
-        font-size: 19px;
-    }
-
-    header .account img {
-        width: 35px;
-        height: 35px;
-    }
-
-    header a {
-        font-size: 18px;
-    }
+header nav h3{
+    font-size: 18px;
+    font-family: "Popins", sans-serif;
+    font-family: 600;
 }
 
-@media screen and (max-width: 768px) {
-    header nav > .d-flex{
+.navbar {
+    background-color: transparent;
+  }
+  
+  .navbar-nav {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust spacing between navigation items */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important; /* Set text color to white */
+  }
+
+  @media screen and (max-width: 1024px){
+
+    .d-flex {
+        display: flex;
+    }
+    
+    header .account > :first-child , .account > :nth-child(2){
+      display: none !important;
+    }
+
+    header .account h3{
+        display: none;
+    }
+
+    header .account img{
+        max-width: 45px !important;
+        width: 45px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    header nav .container-fluid div > :last-child{
+      justify-content: center;
+    }
+
+    header .account > :first-child , .account > :nth-child(2){
+        display: flex !important;
+      }
+  
+      header .account h3{
+          display: flex;
+      }
+
+      header .account{
+        margin-top: 20px;
+      }
+
+      header .account img{
+          margin-top: -10px;
+      }
+  }
+
+  @media screen and (max-width: 375px) {
+    header .account{
+        width: 100% !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .account > :nth-child(2){
         display: none !important;
     }
 
-    header nav > .d-none{
-        display: block !important;
+    header .account > :first-child{
+        margin-left: 80px;
+        margin-top: 20px;
     }
-
-    header nav .bar{
-        padding: 10px 20px;
-        border: 2px solid #ffff;
-        border-radius: 10px;
-    }
-
-    header nav .logo img{
-        width: 100px;
-    }
-}
-
-
+  }
+  
