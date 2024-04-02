@@ -2,7 +2,8 @@
 
 header{
     padding: 32px;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
 }
 
 header i{
@@ -23,10 +24,26 @@ header nav > :nth-child(2){
 
 header nav h3{
     font-size: 18px;
-    font-family: "Popins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-family: 600;
 }
 
+
+.homePage.h5, h5 {
+    font-size: 118px;
+    font-weight: 600;
+    letter-spacing: 25.96px;
+    font-family: "Poppins", sans-serif;
+}
+
+.homePage p{
+    font-size: 29px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+    letter-spacing: 1.16px;
+}
 .navbar {
     background-color: transparent;
   }
