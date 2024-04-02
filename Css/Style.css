@@ -43,6 +43,10 @@ header nav h3{
   .navbar-nav .nav-link {
     color: white !important; /* Set text color to white */
   }
+  .text-light {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
 
   @media screen and (max-width: 1024px){
 
@@ -63,6 +67,13 @@ header nav h3{
         width: 45px;
     }
   }
+
+  .navbar-toggler {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border : 2px solid white;
+    }
+
 
   @media screen and (max-width: 768px){
     header nav .container-fluid div > :last-child{
