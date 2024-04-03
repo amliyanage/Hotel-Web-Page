@@ -65,6 +65,12 @@ header nav h3{
     color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
 
+@media screen and (max-width: 1440px) {
+  section .w-100 {
+    width: 191vh !important;
+}
+}
+
   @media screen and (max-width: 1024px){
 
     .d-flex {
